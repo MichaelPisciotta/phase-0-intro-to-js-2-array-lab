@@ -26,31 +26,27 @@ function destructivelyRemoveFirstCat() {
 
 
 
-
-
 function appendCat(name) {
-    const cats = ["Milo", "Otis", "Garfield"];
-    const copyOfCats = ['Broom', ...cats];
+    return [...cats, name];
 }
-console.log(copyOfCats);
+console.log(appendCat(Broom));
 
 
 function prependCat(name){
-    const cats = ["Milo", "Otis", "Garfield"];
-    const copyOfCats = [...cats, 'Arnold'];
+  return [name, ...cats];
 }
+console.log(prependCat(Arnold));
+
+
+
 
 
 function removeLastCat() {
-    const cats = ["Milo", "Otis", "Garfield"];
-    const copyOfCats = cats.slice(2);
+    return cats.slice(0, -1);
 }
-console.log(copyOfCats);
+
 
 
 function removeFirstCat() {
-    const cats = ["Milo", "Otis", "Garfield"];
-    const copyOfCats = cats.slice(0);
-
+    return cats.slice(1);
 }
-console.log(copyOfCats);
