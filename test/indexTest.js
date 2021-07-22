@@ -12,6 +12,8 @@ describe('index.js', function () {
       cats.push('Milo', 'Otis', 'Garfield');
     });
 
+
+
     describe('destructivelyAppendCat(name)', function () {
       it('appends a cat to the end of the cats array', function () {
         destructivelyAppendCat('Ralph');
@@ -44,6 +46,14 @@ describe('index.js', function () {
       });
     });
 
+
+
+
+
+
+
+
+
     describe('appendCat(name)', function () {
       it('appends a cat to the cats array and returns a new array, leaving the cats array unchanged', function () {
         expect(appendCat("Broom")).to.have.ordered.members(["Milo", "Otis", "Garfield", "Broom"]);
@@ -60,6 +70,10 @@ describe('index.js', function () {
       });
     });
 
+
+
+
+    
     describe('removeLastCat()', function () {
       it('removes the last cat in the cats array and returns a new array, leaving the cats array unchanged', function () {
         expect(removeLastCat()).to.have.ordered.members(["Milo", "Otis"]);
